@@ -75,7 +75,7 @@ Temporary Items
 yarn.lock
 out
 
-**/built-grammar.*
+# **/built-grammar.*
 **/.nyc_output
 
 package-lock.json
