@@ -181,7 +181,7 @@ const mkMutableState = reducers => class {
 module.exports = (options, reducers) => function * tokenizer(src) {
 	reducers = reducers || require('./reducers');
 
-	const State = process.env.NODE_NEV === 'development' ? mkImmutableState(reducers) : mkMutableState(reducers);
+	const State = process.env.NODE_ENV === 'development' ? mkImmutableState(reducers) : mkMutableState(reducers);
 
 	let state = new State();
 
